@@ -27,7 +27,8 @@ body{
     background: #08121C;
     border-radius: 30px;
     color: white;
-    
+    position: fixed;
+    top: 0;
 }
 .digit{
     display: flex;
@@ -39,6 +40,7 @@ body{
     padding-bottom: 24px;
     gap: 24px;
     align-items: flex-end;
+    
 }
 .digit p{
     font-weight: lighter;
@@ -90,7 +92,7 @@ button{
 .zero{
     width: 246px;
 }
-.c,.plus-divide,.modulus,.division,.times,.minus,.plus{
+.c,.delete,.modulus,.division,.times,.minus,.plus{
     background: #143442;
 }
 .equal-to{

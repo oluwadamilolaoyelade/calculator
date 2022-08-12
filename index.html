@@ -4,43 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAVASCRIPT DOM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CALCULATOR</title>
 </head>
 <body>
-    <P id="greeting">Welcome to Javascript Class</P>
-     <p>this is dami</p>
-     <div class="container">
-        <form action="">
-            <h1>Login to your Account</h1>
-            <div class="form-input">
-                <label for="Email">Email Address</label> <br>
-                <input type="email" id="Email" name="Email" mailto:placeholder="email@example.org" required>
-            </div>
-            <div class="form-input">
-                <label for="Password">Password</label><br>
-                <input type="password" id="Password" name="Password" placeholder="**********" required>
-            </div>
-            <button type="submit">Login</button>
-        </form>
+    <div class="container">
+        <div class="digit" id="display">
+            <p data-previous-operand></p>
+            <h2 data-current-operand></h2>
+        </div>
+        <!-- <div class="history">
+            <p>HISTORY</p>
+            <div><img src="/Assets/icons/backspace-icon 1.png" alt=""></div>
+        </div> -->
+        <div class="press">
+            <button data-all-clear class="c">AC</button>
+            <button data-delete class="delete">Del</button>
+            <button data-operation class="modulus">%</button>
+            <button data-operation class="division">/</button>
+            <button data-number class="seven">7</button>
+            <button data-number class="eight">8</button>
+            <button data-number class="nine">9</button>
+            <button data-operation class="times">x</button>
+            <button data-number class="four">4</button>
+            <button data-number class="five">5</button>
+            <button data-number class="six">6</button>
+            <button data-operation class="minus">-</button>
+            <button data-number class="one">1</button>
+            <button data-number class="two">2</button>
+            <button data-number class="three">3</button>
+            <button data-operation class="plus">+</button>
+            <button data-number class="zero">0</button>
+            <button data-number class="point">.</button>
+            <button data-equals class="equal-to">=</button>
+        </div>
     </div>
-    
-    <!-- div.container
-    .document.body.children[0]
-    
-    form
-    .document.body.children[0].children[0]
-    
-    h1
-    .document.body.children[0].children[0].firstchild
-    
-    label for email
-    .document.body.children[0].children[0].children[1].firstchild
-    
-    label for password
-    .document.body.children[0].children[0].children[2].firstchild
-    
-    button
-    .document.body.children[0].children[0].lastchild --> -->
-    <script src="/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
